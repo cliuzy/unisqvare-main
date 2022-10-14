@@ -45,7 +45,7 @@ li i {
 }
 .body-content {
   margin-left: 200px;
-  background-color: azure;
+  background-color: #fff;
 }
 .uniben-head {
   height: 350px;
@@ -67,6 +67,7 @@ li i {
   display: flex;
   padding-top: 25px;
   padding-bottom: 30px;
+  background-color: #fff;
 }
 .uniben-post p {
   padding-left: 15px;
@@ -114,9 +115,17 @@ li i {
 @media screen and (max-width: 990px) {
   body {
     overflow-x: hidden;
+    width: 100%;
+  }
+  nav li {
+    width: 50px;
+    padding-top: 15px;
+  }
+  nav {
+    width: 50px;
   }
   .body-content {
-    background-color: azure;
+    background-color: #fff;
     margin-left: 100px;
   }
 
@@ -141,8 +150,13 @@ li i {
   .uniben-post i {
     padding-left: 50px;
   }
-  #sidebar {
-    padding: 10px;
-    max-height: 100vh;
+  .sidebar {
+    height: 100%;
+    width: 50px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow: hidden;
   }
 }
